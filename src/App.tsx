@@ -7,6 +7,8 @@ import './App.css';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from "./paginas/login/Login";
 import CadastroUsuario from "./paginas/cadastroUsuario/CadastroUsuario";
+import ListaTemas from "./components/temas/listatemas/ListaTemas";
+import ListaPostagens from "./components/postagens/listapostagens/ListaPostagens";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Route path="/home" element={<Home />}/>
         <Route path="/login" element={<Login />} />
         <Route path="/cadastrousuario" element={<CadastroUsuario/>}/>
+        <Route path="/temas" element={<ListaTemas/>}/>
+        <Route path="/posts" element={<ListaPostagens/>}/>
         </Routes>
         <Footer />
       </BrowserRouter>

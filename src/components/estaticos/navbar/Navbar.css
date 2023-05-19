@@ -1,9 +1,11 @@
 .cursor{
     cursor: pointer;
     color: white;
+    justify-content: center;
 }
 
 .text-decorator-none{
     text-decoration: none;
     color: white;
 }
+

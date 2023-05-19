@@ -16,20 +16,20 @@ function Footer() {
                             <Typography variant="h5" align="center" gutterBottom className='textos'>Siga-nos nas redes sociais </Typography>
                         </Box>
                         <Box display="flex" alignItems="center" justifyContent="center">
-                            <a href="https://www.facebook.com/generationbrasil" target="_blank">
+                            <a href="https://www.facebook.com/tefy.camily.1?mibextid=LQQJ4d" target="_blank">
                                 <FacebookIcon className='redes' />
                             </a>
-                            <a href="https://www.instagram.com/generationbrasil/" target="_blank">
+                            <a href="https://instagram.com/tefycamily?igshid=NTc4MTIwNjQ2YQ==" target="_blank">
                                 <InstagramIcon className='redes' />
                             </a>
-                            <a href="https://www.linkedin.com/school/generationbrasil/" target="_blank">
+                            <a href="https://www.linkedin.com/in/stephanycamily" target="_blank">
                                 <LinkedInIcon className='redes' />
                             </a>
                         </Box>
                     </Box>
                     <Box className='box2'>
                         <Box paddingTop={1}>
-                            <Typography variant="subtitle2" align="center" gutterBottom className='textos' >© 2020 Copyright:</Typography>
+                            <Typography variant="subtitle2" align="center" gutterBottom className='textos'>© 2023 Copyright:</Typography>
                         </Box>
                         <Box>
                             <a target="_blank" href="https://brasil.generation.org">
