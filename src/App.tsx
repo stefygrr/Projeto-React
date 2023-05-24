@@ -4,7 +4,7 @@ import Footer from "./components/estaticos/footer/Footer";
 import { Grid } from '@material-ui/core';
 import Home from './paginas/home/Home';
 import './App.css';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from "./paginas/login/Login";
 import CadastroUsuario from "./paginas/cadastroUsuario/CadastroUsuario";
 import ListaTemas from "./components/temas/listatemas/ListaTemas";
@@ -16,9 +16,9 @@ import DeletarTema from './components/temas/deletarTema/DeletarTema';
 
 function App() {
   return (
-    <>
-      <BrowserRouter>
-        <Navbar />
+    <Router>
+    <Navbar />
+    <div style={{ minHeight: '100vh' }}>
         <Routes>
         <Route path="/" element={<Login />}/>
         <Route path="/home" element={<Home />}/>
@@ -32,11 +32,10 @@ function App() {
           <Route path="/formularioTema/:id" element={<CadastroTema />} />
           <Route path="/deletarPostagem/:id" element={<DeletarPostagem />} />
           <Route path="/deletarTema/:id" element={<DeletarTema />} />
-
-        </Routes>
-        <Footer />
-      </BrowserRouter>
-    </>
+          </Routes>
+      </div>
+      <Footer />
+    </Router>
   )
 }
 
