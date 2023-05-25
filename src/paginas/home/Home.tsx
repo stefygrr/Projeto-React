@@ -6,12 +6,18 @@ import './Home.css'
 import ModalPostagem from '../../components/postagens/modalPostagem/ModalPostagem'
 import { useNavigate } from 'react-router-dom'
 import useLocalStorage from 'react-use-localstorage'
+import { useSelector } from 'react-redux'
+import { UserState } from '../../store/token/Reducer'
 
 
 function Home() {
 
     let navigate = useNavigate();
-    const [token, setToken] = useLocalStorage('token');
+    //const [token, setToken] = useLocalStorage('token');
+
+    const token = useSelector<UserState, UserState["tokens"]>(
+        (state) => state.tokens
+    )
 
     useEffect(() => {
         if (token == "") {
