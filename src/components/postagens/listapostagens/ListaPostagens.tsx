@@ -5,11 +5,14 @@ import { busca } from '../../../services/Service'
 import { Card, CardActions, CardContent, Button, Typography } from '@material-ui/core';
 import { Box } from '@mui/material';
 import './ListaPostagens.css';
-import useLocalStorage from 'react-use-localstorage';
 import { useNavigate } from 'react-router-dom'
 import { useSelector } from 'react-redux';
 import { UserState } from '../../../store/token/Reducer';
 import { toast } from 'react-toastify';
+
+const TestComponent: React.FC = () => {
+    return <div>Hello, world!</div>;
+}
 
 function ListaPostagem() {
     const [posts, setPosts] = useState<Postagem[]>([])

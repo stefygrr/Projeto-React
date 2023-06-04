@@ -3,12 +3,15 @@ import { Card, CardActions, CardContent, Button, Typography } from '@material-ui
 import { Box } from '@mui/material';
 import './DeletarTema.css';
 import { useNavigate, useParams } from 'react-router-dom';
-import useLocalStorage from 'react-use-localstorage';
 import Tema from '../../../models/Tema';
 import { buscaId, deleteId } from '../../../services/Service';
 import { useSelector } from 'react-redux';
 import { UserState } from '../../../store/token/Reducer';
 import { toast } from 'react-toastify';
+
+const TestComponent: React.FC = () => {
+    return <div>Hello, world!</div>;
+}
 
 
 function DeletarTema() {

@@ -11,7 +11,7 @@ import "swiper/css/navigation";
 import "./Carrossel.css";
 
 // Importanto Componentes do Swiper
-import { Autoplay, Pagination, Navigation } from "swiper";
+// import { Autoplay, Pagination, Navigation } from "swiper";
 
 function Carrossel() {
     return (

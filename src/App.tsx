@@ -17,6 +17,11 @@ import store from "./store/Store";
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css'
 
+const TestComponent: React.FC = () => {
+  return <div>Hello, world!</div>;
+}
+
+
 
 function App() {
 

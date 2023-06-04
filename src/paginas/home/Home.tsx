@@ -5,10 +5,13 @@ import TabPostagens from '../../components/postagens/tabpostagens/TabPostagens'
 import './Home.css'
 import ModalPostagem from '../../components/postagens/modalPostagem/ModalPostagem'
 import { Link, useNavigate } from 'react-router-dom'
-import useLocalStorage from 'react-use-localstorage'
 import { useSelector } from 'react-redux'
 import { UserState } from '../../store/token/Reducer'
 import { toast } from 'react-toastify'
+
+const TestComponent: React.FC = () => {
+    return <div>Hello, world!</div>;
+}
 
 
 function Home() {

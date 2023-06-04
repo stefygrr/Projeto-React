@@ -3,12 +3,14 @@ import { Container, Typography, TextField, Button } from "@material-ui/core"
 import Tema from '../../../models/Tema';
 import { Navigate, useNavigate, useParams } from 'react-router-dom';
 import './CadastroTema.css';
-import useLocalStorage from 'react-use-localstorage';
 import { buscaId, post, put } from '../../../services/Service';
 import { useSelector } from 'react-redux';
 import { UserState } from '../../../store/token/Reducer';
 import { toast } from 'react-toastify';
 
+const TestComponent: React.FC = () => {
+    return <div>Hello, world!</div>;
+}
 
 function CadastroTema() {
     let navigate = useNavigate();

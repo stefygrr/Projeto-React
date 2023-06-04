@@ -4,12 +4,14 @@ import { Box } from '@mui/material';
 import './DeletarPostagem.css';
 import Postagem from '../../../models/Postagens';
 import { useNavigate, useParams } from 'react-router-dom';
-import useLocalStorage from 'react-use-localstorage';
 import { buscaId, deleteId } from '../../../services/Service';
 import { useSelector } from 'react-redux';
 import { UserState } from '../../../store/token/Reducer';
 import { toast } from 'react-toastify';
 
+const TestComponent: React.FC = () => {
+    return <div>Hello, world!</div>;
+}
 
 function DeletarPostagem() {
     let navigate = useNavigate();

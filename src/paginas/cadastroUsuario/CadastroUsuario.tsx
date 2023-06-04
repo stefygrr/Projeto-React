@@ -8,6 +8,10 @@ import { Link } from 'react-router-dom';
 import './CadastroUsuario.css';
 import { toast } from 'react-toastify';
 
+const TestComponent: React.FC = () => {
+    return <div>Hello, world!</div>;
+}
+
 function CadastroUsuario() {
 
     let navigate = useNavigate();

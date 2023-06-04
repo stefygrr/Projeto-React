@@ -3,11 +3,14 @@ import { Link, useNavigate } from 'react-router-dom'
 import { Box, Card, CardActions, CardContent, Button, Typography } from '@material-ui/core'
 import Tema from '../../../models/Tema';
 import './ListaTemas.css';
-import useLocalStorage from 'react-use-localstorage';
 import { busca } from '../../../services/Service';
 import { useSelector } from 'react-redux';
 import { UserState } from '../../../store/token/Reducer';
 import { toast } from 'react-toastify';
+
+const TestComponent: React.FC = () => {
+    return <div>Hello, world!</div>;
+}
 
 function ListaTemas() {
     const [temas, setTemas] = useState<Tema[]>([])
