@@ -1,4 +1,3 @@
-import React from 'react';
 import { AppBar, Toolbar, Typography } from '@material-ui/core';
 import { Box } from '@mui/material';
 import { Link } from 'react-router-dom';
@@ -8,11 +7,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { UserState } from '../../../store/token/Reducer';
 import { addToken } from '../../../store/token/Actions';
 import { toast } from 'react-toastify';
-
-const TestComponent: React.FC = () => {
-    return <div>Hello, world!</div>;
-}
-
 
 
 function Navbar() {

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import { Typography, Grid, Button } from '@material-ui/core'
 import { Box } from '@mui/material'
 import TabPostagens from '../../components/postagens/tabpostagens/TabPostagens'
@@ -8,11 +8,6 @@ import { Link, useNavigate } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import { UserState } from '../../store/token/Reducer'
 import { toast } from 'react-toastify'
-
-const TestComponent: React.FC = () => {
-    return <div>Hello, world!</div>;
-}
-
 
 function Home() {
 

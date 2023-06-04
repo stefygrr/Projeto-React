@@ -1,4 +1,4 @@
-import React , {useState, useEffect, ChangeEvent } from 'react';
+import {useState, useEffect, ChangeEvent } from 'react';
 import { useNavigate } from 'react-router-dom';
 import User from '../../models/User';
 import { cadastroUsuario } from '../../services/Service';
@@ -8,9 +8,6 @@ import { Link } from 'react-router-dom';
 import './CadastroUsuario.css';
 import { toast } from 'react-toastify';
 
-const TestComponent: React.FC = () => {
-    return <div>Hello, world!</div>;
-}
 
 function CadastroUsuario() {
 

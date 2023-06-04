@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Card, CardActions, CardContent, Button, Typography } from '@material-ui/core';
 import { Box } from '@mui/material';
 import './DeletarTema.css';
@@ -8,11 +8,6 @@ import { buscaId, deleteId } from '../../../services/Service';
 import { useSelector } from 'react-redux';
 import { UserState } from '../../../store/token/Reducer';
 import { toast } from 'react-toastify';
-
-const TestComponent: React.FC = () => {
-    return <div>Hello, world!</div>;
-}
-
 
 function DeletarTema() {
     let navigate = useNavigate();

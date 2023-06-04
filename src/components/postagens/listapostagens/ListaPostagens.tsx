@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Postagem from '../../../models/Postagens';
 import { busca } from '../../../services/Service'
@@ -10,9 +10,6 @@ import { useSelector } from 'react-redux';
 import { UserState } from '../../../store/token/Reducer';
 import { toast } from 'react-toastify';
 
-const TestComponent: React.FC = () => {
-    return <div>Hello, world!</div>;
-}
 
 function ListaPostagem() {
     const [posts, setPosts] = useState<Postagem[]>([])

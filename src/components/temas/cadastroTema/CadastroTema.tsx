@@ -1,16 +1,13 @@
-import React, { useState, useEffect, ChangeEvent } from 'react'
+import { useState, useEffect, ChangeEvent } from 'react'
 import { Container, Typography, TextField, Button } from "@material-ui/core"
 import Tema from '../../../models/Tema';
-import { Navigate, useNavigate, useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import './CadastroTema.css';
 import { buscaId, post, put } from '../../../services/Service';
 import { useSelector } from 'react-redux';
 import { UserState } from '../../../store/token/Reducer';
 import { toast } from 'react-toastify';
 
-const TestComponent: React.FC = () => {
-    return <div>Hello, world!</div>;
-}
 
 function CadastroTema() {
     let navigate = useNavigate();

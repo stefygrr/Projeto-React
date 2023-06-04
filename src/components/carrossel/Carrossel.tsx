@@ -1,6 +1,6 @@
 // Importando os Componentes React Swiper
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Typography, Grid, Button , Box} from '@material-ui/core'
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import { Typography, Grid, Button , Box} from '@material-ui/core'
 
 // Importando os estilos do Swiper
 import "swiper/css";

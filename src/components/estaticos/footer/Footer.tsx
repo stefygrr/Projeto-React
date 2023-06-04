@@ -1,4 +1,3 @@
-import React from 'react';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
@@ -9,10 +8,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { UserState } from '../../../store/token/Reducer';
 import { addToken } from '../../../store/token/Actions';
 import { useNavigate } from 'react-router-dom';
-
-const TestComponent: React.FC = () => {
-    return <div>Hello, world!</div>;
-}
 
 
 function Footer() {
