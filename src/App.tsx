@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "./components/estaticos/navbar/Navbar";
 import Footer from "./components/estaticos/footer/Footer";
 import Home from './paginas/home/Home';
@@ -16,11 +15,6 @@ import { Provider } from "react-redux";
 import store from "./store/Store";
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css'
-
-const TestComponent: React.FC = () => {
-  return <div>Hello, world!</div>;
-}
-
 
 
 function App() {
