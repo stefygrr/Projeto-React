@@ -9,6 +9,7 @@ import './TabPostagens.css';
 function TabPostagens() {
     const [value, setValue] = useState('1')
     function handleChange(event: React.ChangeEvent<{}>, newValue: string){
+        event
         setValue(newValue);
     }
 
