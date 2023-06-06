@@ -4,26 +4,15 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import { Typography, Grid } from '@material-ui/core';
 import { Box } from '@mui/material';
 import './Footer.css'
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { UserState } from '../../../store/token/Reducer';
-import { addToken } from '../../../store/token/Actions';
-import { useNavigate } from 'react-router-dom';
 
 
 function Footer() {
-    let navigate = useNavigate();
-
-    const dispatch = useDispatch()
 
     const token = useSelector<UserState, UserState["tokens"]>(
         (state) => state.tokens
     )
-
-    function goLogout() {
-        dispatch(addToken(''))
-        alert("Usuário deslogado")
-        navigate('/login')
-    }
 
 
     var footerComponent;
